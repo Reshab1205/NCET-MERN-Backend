@@ -22,8 +22,8 @@ router.get('/profile', (req,res) => {
 
 router.post('/register', userController.register)
 router.post('/login', userController.login)
-router.post('/update-user', userController.update)
-router.post('/delete-user', userController.deleteUser)
+router.post('/update-user/:id', userController.update)
+router.post('/delete-user/:id', userController.deleteUser)
 router.get('/get-users', userController.getAllUser)
 
 
