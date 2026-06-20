@@ -24,7 +24,7 @@ router.post('/register', userController.register)
 router.post('/login', userController.login)
 router.post('/update-user', userController.update)
 router.post('/delete-user', userController.deleteUser)
-router.post('/get-users', userController.getAllUser)
+router.get('/get-users', userController.getAllUser)
 
 
 
